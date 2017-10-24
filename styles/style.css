@@ -1,4 +1,42 @@
 body {
   background-color: #f5f5f5; }
 
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
+.carousel img {
+  border-radius: 5px; }
+
+.carousel-indicators li {
+  border: 1px solid #7d5ef9; }
+.carousel-indicators .active {
+  background-color: #7d5ef9; }
+
+.list-group-item.active, .list-group-item.active:hover {
+  background-color: #7d5ef9;
+  border-color: #7d5ef9; }
+
+.project {
+  background-image: url("../img/project.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 50px 0px 100px; }
+  .project .box {
+    background-color: #FFF;
+    border-radius: 5px;
+    height: 200px;
+    transition: all .2s ease-in-out; }
+    .project .box:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 3px 1px #7d5ef9; }
+  .project h5 {
+    padding: 10px;
+    background-color: #7d5ef9;
+    color: #FFF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .project p {
+    padding: 10px; }
+
 /*# sourceMappingURL=style.css.map */
