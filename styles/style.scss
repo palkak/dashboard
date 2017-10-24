@@ -1,5 +1,56 @@
 $bg-color: #f5f5f5;
+$color-details: #7d5ef9;
 
 body {
   background-color: $bg-color;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+.carousel img {
+  border-radius: 5px;
+}
+
+.carousel-indicators {
+  li {
+    border: 1px solid $color-details;
+  }
+  .active {
+    background-color: $color-details;
+  }
+}
+
+.list-group-item.active, .list-group-item.active:hover {
+  background-color: $color-details;
+  border-color: $color-details;
+}
+
+.project {
+  background-image: url("../img/project.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 50px 0px 100px;
+  .box {
+    background-color: #FFF;
+    border-radius: 5px;
+    height: 200px;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 3px 1px $color-details;
+    }
+  }
+  h5 {
+    padding: 10px;
+    background-color: $color-details;
+    color: #FFF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  p {
+    padding: 10px;
+  }
 }
