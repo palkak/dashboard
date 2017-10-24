@@ -11,6 +11,7 @@ body {
 
 .carousel img {
   border-radius: 5px;
+  border: 1px solid #ddd;
 }
 
 .carousel-indicators {
@@ -33,14 +34,19 @@ body {
   background-size: cover;
   background-position: bottom;
   padding: 50px 0px 100px;
+  a {
+    text-decoration: none;
+    color: #555;
+  }
   .box {
     background-color: #FFF;
     border-radius: 5px;
     height: 200px;
     transition: all .2s ease-in-out;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
     &:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 3px 1px $color-details;
+      transform: scale(1.05);
+      box-shadow: 0 0 3px 1px rgba(125, 94, 251, 0.3);
     }
   }
   h5 {
