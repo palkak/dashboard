@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f5f5; }
+  background-color: #fff; }
 
 .carousel-control.left, .carousel-control.right {
   background-image: none; }
@@ -9,39 +9,65 @@ body {
   border: 1px solid #ddd; }
 
 .carousel-indicators li {
-  border: 1px solid #7d5ef9; }
+  border: 1px solid #f70163; }
 .carousel-indicators .active {
-  background-color: #7d5ef9; }
+  background-color: #f70163; }
 
 .list-group-item.active, .list-group-item.active:hover {
-  background-color: #7d5ef9;
-  border-color: #7d5ef9; }
+  background-color: #f70163;
+  border-color: #f70163; }
 
-.project {
+.project, .help, .partners {
   background-image: url("../img/project.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   padding: 50px 0px 100px; }
-  .project a {
+  .project a, .help a, .partners a {
     text-decoration: none;
     color: #555; }
-  .project .box {
+  .project .box, .help .box, .partners .box {
     background-color: #FFF;
+    text-align: center;
     border-radius: 5px;
-    height: 200px;
+    height: 250px;
     transition: all .2s ease-in-out;
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3); }
-    .project .box:hover {
+    border: 1px solid #f70168;
+    background-color: transparent;
+    color: #222; }
+    .project .box:hover, .help .box:hover, .partners .box:hover {
       transform: scale(1.05);
       box-shadow: 0 0 3px 1px rgba(125, 94, 251, 0.3); }
-  .project h5 {
+    .project .box h1, .help .box h1, .partners .box h1 {
+      padding: 20px 0px; }
+  .project h5, .help h5, .partners h5 {
     padding: 10px;
-    background-color: #7d5ef9;
+    text-align: left;
+    margin: 0px;
+    background-color: #f70163;
     color: #FFF;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px; }
-  .project p {
-    padding: 10px; }
+  .project p, .help p, .partners p {
+    padding: 10px;
+    text-align: left; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background-color: #f70163;
+  border-bottom: 1px solid #f70163;
+  color: #fff; }
+
+a {
+  color: #9d9d9d; }
+
+.nav-tabs, .nav-tabs > li > a:hover {
+  border-bottom: 1px solid #f70163; }
+
+.help {
+  background-image: none; }
+
+.partners {
+  background-image: none;
+  background-color: #9d9d9d; }
 
 /*# sourceMappingURL=style.css.map */
