@@ -45,7 +45,6 @@ body {
   background-size: cover;
   background-position: bottom;
   padding: 50px 0px 100px;
-  margin-bottom: 20px;
   h1 span {
     color: #fff;
   }
@@ -102,7 +101,7 @@ a {
   @extend .project;
   background-image: url("../img/project.jpg");
   .tab-content {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     padding-bottom: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -117,6 +116,24 @@ a {
   }
 }
 .partners {
-  @extend .project;
-  background-image: none;
+  padding: 50px 0px;
+  text-align: center;
+  h1 {
+    text-align: left;
+  }
+  .partners-logos {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+}
+
+.extra {
+  padding: 100px 0 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
 }
