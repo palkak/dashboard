@@ -1,6 +1,12 @@
 body {
   background-color: #fff; }
 
+@media screen and (max-width: 1170px) {
+  .container {
+    width: 98%; } }
+.header .carousel, .header .list-group {
+  padding: 10px 0; }
+
 .carousel-control.left, .carousel-control.right {
   background-image: none; }
 
@@ -18,11 +24,14 @@ body {
   border-color: #f70163; }
 
 .project, .help, .partners {
-  background-image: url("../img/project.jpg");
+  background-image: url("../img/help.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  padding: 50px 0px 100px; }
+  padding: 50px 0px 100px;
+  margin-bottom: 20px; }
+  .project h1 span, .help h1 span, .partners h1 span {
+    color: #fff; }
   .project a, .help a, .partners a {
     text-decoration: none;
     color: #555; }
@@ -33,11 +42,11 @@ body {
     height: 250px;
     transition: all .2s ease-in-out;
     border: 1px solid #f70168;
-    background-color: transparent;
-    color: #222; }
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #222;
+    margin: 5px 0; }
     .project .box:hover, .help .box:hover, .partners .box:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 3px 1px rgba(125, 94, 251, 0.3); }
+      transform: scale(1.05); }
     .project .box h1, .help .box h1, .partners .box h1 {
       padding: 20px 0px; }
   .project h5, .help h5, .partners h5 {
@@ -54,7 +63,7 @@ body {
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
   background-color: #f70163;
-  border-bottom: 1px solid #f70163;
+  border: 1px solid #f70163;
   color: #fff; }
 
 a {
@@ -64,10 +73,19 @@ a {
   border-bottom: 1px solid #f70163; }
 
 .help {
-  background-image: none; }
+  background-image: url("../img/project.jpg"); }
+  .help .tab-content {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    .help .tab-content a {
+      color: #f70163; }
+    .help .tab-content h3 {
+      margin: 0;
+      padding: 20px 10px 10px; }
 
 .partners {
-  background-image: none;
-  background-color: #9d9d9d; }
+  background-image: none; }
 
 /*# sourceMappingURL=style.css.map */
