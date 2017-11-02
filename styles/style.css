@@ -30,7 +30,7 @@ body {
   background-size: cover;
   background-position: bottom;
   padding: 50px 0px 100px; }
-  .project h1 span, .help h1 span {
+  .project h1, .help h1 {
     color: #fff; }
   .project a, .help a {
     text-decoration: none;
@@ -48,7 +48,8 @@ body {
     .project .box:hover, .help .box:hover {
       transform: scale(1.05); }
     .project .box h1, .help .box h1 {
-      padding: 20px 0px; }
+      padding: 20px 0px;
+      color: #222; }
   .project h5, .help h5 {
     padding: 10px;
     text-align: left;
@@ -74,6 +75,8 @@ a {
 
 .help {
   background-image: url("../img/project.jpg"); }
+  .help h1 {
+    color: #222; }
   .help .tab-content {
     background-color: rgba(255, 255, 255, 0.8);
     padding-bottom: 20px;
